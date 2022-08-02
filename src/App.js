@@ -1,10 +1,18 @@
-import logo from './logo.svg';
 import './styles/index.scss'
+import NavBar from './components/nav';
+import MessageBlock from './components/messageBlock';
 
 function App() {
+
   return (
     <div className="App">
-        <h1>Hello world</h1>
+    <NavBar />
+      <div className="scroll-contianer">
+        <MessageBlock/>
+        <MessageBlock/>
+        <MessageBlock/>
+        <MessageBlock/>
+      </div>
     </div>
   );
 }

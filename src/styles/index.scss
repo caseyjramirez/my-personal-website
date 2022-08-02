@@ -1,12 +1,44 @@
-// @use 'reset.scss';
+// importing all other style files
+@use 'reset.scss';
+@use 'comp.scss';
 
-// coolorz
-$green: #C9D2D4;
-$pink: #F3EAE6;
-$font: -apple-system, 'Helvetica Neue', sans-serif;
+// variables
+@import "./variables.scss";
 
 body {
     font-family: $font;
     color: $pink;
     background-color: $green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+.close {
+    letter-spacing: -.1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+::selection {
+    background: $highlight;
+}
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-child {
+    scroll-snap-align: start;
 }
